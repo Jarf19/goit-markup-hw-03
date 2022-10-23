@@ -10,13 +10,62 @@ body {
     color: var(--main-color);
     font-family:'Roboto',sans-serif;
     background-color: var(--main-background-color) }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li { margin: 0;}
+
+ul,
+li {
+    list-style: none;
+    text-align: none;
+    padding: 0;
+}
+
+ img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+ }
 
 
+
+ .section {
+     padding-top: 94px;
+     padding-bottom: 94px;
+ }
 
 /* header*/
-.logo  {
+.cointeiner {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    display: flex;
+    text-align: center;
+}
 
-color: var(--hover-color)
+.header-container{
+width: 100%;
+border-bottom: 1px;
+
+
+
+
+}
+.nav-coineiner{
+    display: flex;
+    text-align: center;
+    margin-right: 200px;
+    
+}
+ 
+.logo  {
+color: var(--hover-color);
     }
    
 
@@ -27,13 +76,24 @@ color: var(--hover-color)
     line-height: calc(31/26);
     text-decoration-line: none;
     color: #000000; 
+    margin-right: 93px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    
+
+       
+}
+
+header {
+    background-color: var(--main-background-color);
 }
 
 
-header {
-    background-color: var(--main-background-color);}
-
-
+.header-nav-list{
+    display: flex;
+    text-align: center;
+  
+}
 
 .header-list {
     color: var(--second-main-color);
@@ -41,18 +101,22 @@ header {
     font-size: 14px;
     line-height: calc(16/14);
     text-decoration-line: none;
+    margin-right: 50px;
+   
+    
+    
     
 }
-.title{
+
+.title-header{
 list-style-type: none;
-}
-
-.title-list
-{ list-style-type: none;
+text-align: center;
+list-style-type: none;
 background-color: var(--main-background-color);
-}
- 
+padding-top: 32px;
+padding-bottom: 32px;
 
+}
 
 .header-list:hover {
     color: var(--hover-color);
@@ -62,6 +126,14 @@ background-color: var(--main-background-color);
     color: var(--hover-color);
 }
 
+
+.header-contact{
+  display: flex; 
+  align-items: center;
+  
+
+}
+
 .link-maito,
 .link-tel {
     color: var(--main-color);
@@ -69,6 +141,11 @@ background-color: var(--main-background-color);
     font-size: 14px;
     line-height: calc(16/14);
     text-decoration-line: none;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    margin-right: 50px;
+
+    
 }
 
 .link-maito:hover,
@@ -80,10 +157,13 @@ background-color: var(--main-background-color);
 :focus {
     color: var(--hover-color);}
 
- 
+ /* idea */
 .idea
 {   background-color: #2F303A;
-    color: var(--main-background-color);}
+    color: var(--main-background-color);
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
     
     .idea-name {font-family: "Roboto", sans-serif;
         font-weight: 900;
@@ -91,6 +171,11 @@ background-color: var(--main-background-color);
         line-height: 1.36;
         text-align: center;
         text-transform:uppercase;
+        width: 696px;
+        margin-right: auto;
+        margin-left: 252px;
+        margin-top: 0;
+        margin-bottom: 30px;
     }
     
 .button-item {
@@ -103,7 +188,14 @@ background-color: var(--main-background-color);
     cursor: pointer;
     align-items: center;
     letter-spacing: 0.06em;
-    
+    min-width: 216px;
+    min-height: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left:32px ;
+    padding-right:32px ;
+    margin-left:492px ;
+    border-radius: 4px;
    
 }
 
@@ -113,58 +205,129 @@ background-color: #188CE8;
 color: var(--main-background-color);
 }
 
+/* list section */
+.container-list{
+   width: 1200px;
+   margin: 0 auto;
+   padding: 0 15px;
+   display: flex;
+   justify-content: space-between;
+}
+.title{
+    width: 270px;
+}
+
 .list-item
 { color: var(--second-main-color);
    font-weight: 700;
    font-size: 14px;
    line-height: 1.14;
    text-transform: uppercase;
+   margin-bottom: 10px ;
 }
    
 .list-text {
 font-weight: 400;
 font-size: 14px;
 line-height: calc(24/14);}
+
+/* section our job */
+ .container-our-job{
+    width: 1230px;
+    margin: 0 auto;
+    padding: 0 15px;
+    display: flex;
+    margin-top: 50px;
     
-.our-job, .our-team
+ }
+ .title-img{
+ margin-right: 30px;
+ width: 370px;
+ height: 294px;
+ }
+.our-job
 { color: var(--second-main-color);
 font-weight: 700;
 font-size: 36px;
 line-height: 1.17;
+width: 366px;
+height: 42px;
+display: inline;
+margin-left: 480px;
 }
-
+/* section our time */
 .team {
     background-color: #F5F4FA
 }
-.our-team-list
-{ color:var(--second-main-color);
-    font-weight: 500;
-   
+.container-team{
+width: 1200px;
+margin: 0 auto;
+padding: 0 15px;
+}
+.team-list{
+    display: flex;
+    margin-top: 50px;
+    gap: 30px;
     
-  }
-.team-text,.our-team-list {
-font-size: 16px;
-line-height: 1.2;
-letter-spacing: 0.03em;
+}
+.our-team {
+    color: var(--second-main-color);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    width:264px ;
+    height:42px ;
+    margin-left: 468px;
+
 }
 
 
+.our-team-list
+{ color:var(--second-main-color);
+    font-weight: 500;
+    padding-top: 30px;
+    text-align: center;
+  }
+.team-text {
+font-size: 16px;
+line-height: 1.2;
+letter-spacing: 0.03em;
+padding-top: 10px;
+padding-bottom: 30px;
+text-align: center;
+}
+
+.our-team-list {
+    font-size: 16px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;}
 
 
 /* footer*/
 
+
 footer {
 background-color: #2F303A
 }
+.container-footer{
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    border-top: 1px;
+    
+}
 
 .adress {
-    color: var(--main-background-color)
+  color: var(--main-background-color);
 }
 .adress:hover,:focus {
     color: var(--hover-color);
 }
 .adress-list {
     font-style: normal;
+    margin-top: 20px;
 }
 .adress
 {
@@ -172,7 +335,11 @@ background-color: #2F303A
     font-size: 14px;
     line-height: 1.7;
     text-decoration-line: none;
+    
 
+}
+.title-contact {
+    margin-bottom: 9px;
 }
 .logo-two {
     color: var(--main-background-color);
@@ -186,6 +353,8 @@ background-color: #2F303A
     font-weight: 700;
     font-size: 26px;
     line-height: calc(31/26);
+   
+   
 }
 .logo-tree {
     color: var(--hover-color);
