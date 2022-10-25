@@ -39,35 +39,34 @@ img {
 
 
 
-.section {
-    padding-top: 94px;
-    padding-bottom: 94px;
+/* header*/
+header {
+    background-color: var(--main-background-color);
 }
 
-/* header*/
 .cointeiner {
     width: 1200px;
-    margin: 0 auto;
-    padding: 0 15px;
-    display: flex;
-    text-align: center;
+    margin: 0, auto;
+    padding: 0, 15px;
 }
 
 .header-container {
     width: 100%;
-    border-bottom: 1px;
+    border-bottom: 1px solid #ECECEC;
+}
+
+.cointeiner-header-one {
+    display: inline-flex;
 }
 
 .nav-coineiner {
     display: flex;
-    text-align: center;
-    margin-right: 200px;
 }
+
 
 .logo {
     color: var(--hover-color);
 }
-
 
 .logo-one {
     font-family: "Raleway", sans-serif;
@@ -79,18 +78,15 @@ img {
     margin-right: 93px;
     padding-top: 24px;
     padding-bottom: 24px;
-}
 
-header {
-    background-color: var(--main-background-color);
 }
 
 
 .header-nav-list {
     display: flex;
-    text-align: center;
-
 }
+
+
 
 .header-list {
     color: var(--second-main-color);
@@ -98,7 +94,6 @@ header {
     font-size: 14px;
     line-height: calc(16/14);
     text-decoration-line: none;
-   
 }
 
 .title-header {
@@ -109,7 +104,10 @@ header {
     padding-top: 32px;
     padding-bottom: 32px;
     margin-left: 50px;
+}
 
+.title-header:first-child {
+    margin-left: 0px;
 }
 
 .header-list:hover {
@@ -120,13 +118,20 @@ header {
     color: var(--hover-color);
 }
 
-
 .header-contact {
-    display: flex;
-    align-items: center;
-    margin-left: 70px;
+    display: inline-flex;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    margin-left: 344px;
 }
 
+.title-contact-header {
+    margin-left: 50px;
+}
+
+.title-contact-header:first-child {
+    margin-left: 0px;
+}
 
 .link-maito,
 .link-tel {
@@ -135,9 +140,7 @@ header {
     font-size: 14px;
     line-height: calc(16/14);
     text-decoration-line: none;
-    padding-top: 32px;
-    padding-bottom: 32px;
-    margin-right: 50px;
+
 }
 
 .link-maito:hover,
@@ -151,6 +154,8 @@ header {
 }
 
 /* main*/
+
+
 .portfolio{
     position: absolute;
     white-space: nowrap;
@@ -163,26 +168,30 @@ header {
     clip-path: inset(50%);
     margin: -1px;
 }
-.container-buttom{
-width: 1200px;
-margin: 0 auto;
-padding: 0 15px;
+.container {
+    width: 1200px;
+    margin: 0, auto;
+    padding: 0. 15px;
 }
+
+
  .button{
-    display: flex;
-    text-align: center;
-    margin-left: 285px;
+     display: inline-flex;
     padding-top:100px ;
     padding-bottom:50px ;
-    text-decoration-line: none;
-    
-        
-
+    text-decoration-line: none; 
+    margin-left: 312px;
+   
+         
  }
  .title-button{
-    margin-left: 8px;
- }
+margin-left: 8px;
 
+
+ }
+.title-button:first-child{
+    margin-left: 0;
+}
 
 .button-list {
     font-family: "Roboto", sans-serif;
@@ -202,22 +211,14 @@ padding: 0 15px;
     padding-right:32px ;
     padding-top: 6px;
     padding-bottom:6px ;
-    border: #2196F3;
+    border: none;
     }
 
  .button-list:hover,.button-list:focus {
     background-color:var(--hover-color);
-    color: var(--main-background-color);
-    
+    color: var(--main-background-color);   
  }
-.container-menue {
-    width: 1200px;
-     margin-left: auto;
-     margin-right: auto;
-     margin-bottom: 94px;
-     
-    
-    }
+
 
   .menue { 
     margin: 0;
@@ -226,11 +227,13 @@ padding: 0 15px;
     flex-wrap: wrap;
     list-style-type: none;
     flex-basis: calc(100% / 3);
+    padding-bottom: 94px;
+    gap: 30px;
     
   }   
 
 .menue-img{
-    margin-left: 30px;
+  
 
 }
 .menue-card{
@@ -239,16 +242,16 @@ padding: 0 15px;
     padding-top: 20px;
     padding-bottom: 20px;
     border: 1px solid #EEEEEE;
-    margin-left: 28px;
+    
     
 
 }
 .title-list{
     background-color: var(--main-background-color);
-    margin-bottom: 30px;
-    
-    
+     
 }
+
+
 .menue-list {
     color:var(--second-main-color);
     font-weight: 700;
@@ -272,26 +275,21 @@ padding: 0 15px;
 }
 
 
+
 /* footer*/
+
 
 footer {
     background-color: #2F303A
 }
 
-.container-footer {
-    width: 1200px;
-    margin: 0 auto;
-    padding: 0 15px;
+.cointeiner-footer {
     padding-top: 60px;
     padding-bottom: 60px;
-    border-top: 1px;
-    
-
 }
 
 .adress {
     color: var(--main-background-color);
-    
 }
 
 .adress:hover,
@@ -310,15 +308,21 @@ footer {
     line-height: 1.7;
     text-decoration-line: none;
 
+
 }
 
-.title-contact {
+.title-contact-footer {
     margin-bottom: 9px;
+}
+
+.title-contact-footer:last-child {
+    margin-bottom: 0;
 }
 
 .logo-two {
     color: var(--main-background-color);
     text-decoration-line: none;
+
 }
 
 .logo-two,
