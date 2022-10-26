@@ -47,7 +47,7 @@ header {
     padding: 0 15px; 
 }
 
-.header-conteiner{
+.header-container{
 border-bottom: 1px solid #ECECEC;
 }
 
@@ -151,9 +151,8 @@ margin-left: 344px;
     padding-top: 200px;
     padding-bottom: 200px;
     
-    
 }
-    
+  
     .idea-name {font-family: "Roboto", sans-serif;
         font-weight: 900;
         font-size: 44px;
@@ -184,7 +183,9 @@ margin-left: 344px;
     padding-right:32px ;
     border-radius: 4px;
     border: none;
-    margin-left: 492px; 
+    display: flex;
+    margin: 0 auto;
+   
    
 }
 
